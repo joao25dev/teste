@@ -8,20 +8,20 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
-		Scanner sc= new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
-		double A, B, C, TRIANGULO, CIRCULO, TRAPEZIO, QUADRADO, RETANGULO, pi;
+		double A, B, C, TRIANGULO, CIRCULO, TRAPEZIO, QUADRADO, RETANGULO;
+		final double pi = 3.14159;
 		
 		A = sc.nextDouble();
 		B = sc.nextDouble();
 		C = sc.nextDouble();
 		
-		pi = 3.14159;
-		TRIANGULO = A * C;
-		CIRCULO = pi + C;
-		TRAPEZIO = A + B + C;
-		QUADRADO = B;
-		RETANGULO = A + B;
+		TRIANGULO = 0.5 * A * C;
+		CIRCULO = pi * C * C;
+		TRAPEZIO = ((A + B) / 2) * C;
+		QUADRADO = B * B;
+		RETANGULO = A * B;
 		
 		System.out.printf("TRIANGULO: %.3f%n", TRIANGULO);
 		System.out.printf("CIRCULO: %.3f%n", CIRCULO);
@@ -29,24 +29,6 @@ public class Main {
 		System.out.printf("QUADRADO: %.3f%n", QUADRADO);
 		System.out.printf("RETANGULO: %.3f%n", RETANGULO);
 		
-				
-		
-				
-		
-		
-		
-		
-		
-		
-		
-		
-			
-		
-		
-				
 		sc.close();
-	
-		
 	}
-
 }
